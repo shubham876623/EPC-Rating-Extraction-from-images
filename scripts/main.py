@@ -9,7 +9,7 @@ def process_images():
     for image in images:
         property_id = int(image[0])
         existing_rating = image[2]  
-        print(image[1])
+        
         if image[1] is not None and "None" not in image[1]:
             # Skip processing if rating is already present and valid
             if existing_rating and existing_rating not in ["0", 0, None, "Not Available"]:
